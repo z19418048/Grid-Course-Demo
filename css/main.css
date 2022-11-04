@@ -1,0 +1,379 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+nav {
+    width: 100%;
+    height: 44px;
+    background-color: rgba(0, 0, 0, 0.8);
+    position: fixed;
+}
+
+nav ul.nav-content{
+    width: 1024px;
+    height: 100%;
+    margin: 0 auto;
+    list-style: none;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.nav-content li {
+    opacity: 0.8;
+    transition: opacity 0.5s;
+}
+
+.nav-content li:hover {
+    opacity: 1;
+}
+
+.nav-content li a {
+    text-decoration: none;
+    color: #f5f5f7;
+    font-weight: 400;
+    font-size: 12px;
+    display: block;
+    width: 100%;
+    height: 100%;
+}
+
+.nav-content .apple-icon {
+    width: 30px;
+    height: 44px;
+    background-position: center center;
+    background-size: 14px 44px;
+    background-repeat: no-repeat;
+    background-image: url('../images/apple_icon.svg');
+}
+
+
+.nav-content .search-icon {
+    width: 31px;
+    height: 100%;
+    background-size: 15px 88px;
+    background-position: 8px 0;
+    background-repeat: no-repeat;
+    background-image: url('../images/search_icon.svg');
+}
+.nav-content .bag-icon {
+    width: 30px;
+    height: 44px;
+    background-position: center center;
+    background-size: 14px 44px;
+    background-repeat: no-repeat;
+    background-image: url('../images/bag_icon.svg');
+}
+
+
+.main {
+    padding-top: 44px;
+}
+
+.main .adds {
+    width: 100%;
+    height: 44px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background-color: #f5f5f7;
+    font-size: 14px;
+}
+
+.main .adds a {
+    text-decoration: none;
+    color: #06c;
+}
+
+.main .adds a:hover {
+    text-decoration: underline;
+}
+
+.product-area {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    grid-template-rows: repeat(6, 692px);
+    gap: 12px;
+}
+
+.product-area .product {
+    width: 100%;
+    height: 100%;
+}
+.product-area .product.full-col {
+    grid-column-start: 1;
+    grid-column-end: -1;
+}
+
+.product.macbook-air {
+    background-repeat: no-repeat;
+    background-position: center center;
+    background-image: url('../images/macbook-air.png');
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    padding-right: 30%;
+}
+
+.product .content {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.content h1 {
+    font-size: 48px;
+}
+
+.content h3 {
+    font-size: 21px;
+    font-weight: 300;
+}
+
+.content .m2-adds {
+    margin-top: 8px;
+    background-size: 244px 36px;
+    background-repeat: no-repeat;
+    background-image: url('../images/m2-adds.png');
+    width: 244px;
+    height: 36px;
+}
+
+.content .tips {
+    color: #86868b;
+    font-size: 19px;
+    margin-top: 11px;
+}
+
+.content .action-area {
+    display: flex;
+    margin-top: 10px;
+
+}
+
+.content a {
+    text-decoration: none;
+    color: #06c;
+    font-size: 19px;
+    cursor: pointer;
+}
+
+.content a:hover {
+    text-decoration: underline;
+}
+
+.product .content a::after {
+    content: "   >";
+}
+
+
+.product .content a:not(:first-child) {
+    margin-left: 32px;
+}
+
+.product.mbp13 {
+    background-image: url('../images/mbp13.jpeg');
+    background-repeat: no-repeat;
+    background-position: center center;
+    background-color: black;
+    display: flex;
+    justify-content: center;
+    padding: 47px;
+}
+
+.product.mbp13 .content h1{
+    color: white;
+}
+
+.product.mbp13 .content .m2-adds {
+    background-image: url('../images/m2-black.png');
+    background-size: 293px 68px;
+    width: 293px;
+    height: 69px;
+}
+
+.product.iphone13 {
+    background-image: url('../images/iphone13.jpeg');
+    background-repeat: no-repeat;
+    background-position: center;
+    background-color: #fbfbfd;
+    padding: 47px;
+
+}
+
+.product.iphone13-m {
+    background-image: url('../images/iphone13-m.jpeg');
+    background-position: center;
+    background-repeat: no-repeat;
+    background-color: #fbfbfd;
+    padding-top: 50px;
+}
+
+
+.product.watch {
+    background-image: url('../images/watch-bg.jpeg');
+    background-position: center;
+    background-repeat: no-repeat;
+    background-color: #fbfbfd;
+    padding-top: 50px;
+}
+
+.product.watch .content .watch-img {
+    background-image: url('../images/watch.png');
+    width: 146px;
+    height: 56px;
+    background-size: 146px 56px;
+    background-repeat: no-repeat;
+    margin-bottom: 10px;
+}
+
+
+.product.ipad-air {
+    background-image: url('../images/ipadair-bg.jpeg');
+    background-position: center;
+    background-size: cover;
+    background-repeat: no-repeat;
+    padding-top: 50px;
+
+}
+
+.product.ipad-air .content .ipad-air-img {
+    background-image: url('../images/ipad-air.png');
+    width: 133px;
+    height: 37px;
+    background-size: cover;
+    background-repeat: no-repeat;
+}
+
+
+.product.ipad-air .content h3 {
+    color: white;
+
+}
+
+.product.privacy {
+    background-image: url('../images/privacy.jpeg');
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    padding-top: 50px;
+}
+
+.product.privacy .content h1{
+    color: white;
+}
+
+.product.studio-display {
+    background-image: url('../images/studio-display.jpeg');
+    background-position: center;
+    background-repeat: no-repeat;
+    padding-top: 50px;
+    background-color: #fbfbfd;
+}
+
+.product.air-tag {
+    background-image: url('../images/air-tag.jpeg');
+    background-position: center;
+    background-repeat: no-repeat;
+    padding-top: 50px;
+    background-color: #fbfbfd;
+}
+
+
+footer {
+    margin-top: 12px;
+    background-color: #f5f5f7;
+}
+
+footer .content {
+    width: 980px;
+    margin: 0 auto;
+    padding: 0 22px;
+}
+
+
+footer .content .footer-nav {
+    padding-top: 20px;
+    display: flex;
+}
+
+footer .content .footer-nav .col {
+    flex: 1;
+}
+
+
+.links .label {
+    font-size: 12px;
+    color: #1d1d1f;
+    margin-bottom: 10px;
+    font-weight: bold;
+}
+
+.links ul {
+    list-style: none;
+
+}
+
+.links ul li {
+    margin-bottom: 10px;
+}
+
+.links ul li a {
+    color: #424245;
+    font-size: 12px;
+}
+
+.links ul li a::after {
+    content: none;
+}
+
+
+.shopping-advise {
+    font-size: 12px;
+    color: #6e6e73;
+    border-bottom: 1px solid #d2d2d7;
+    padding-bottom: 8px;
+}
+
+.shopping-advise a {
+    font-size: 12px;
+}
+
+section.bottom-area {
+    padding: 34px 0 21px;
+}
+
+.legal-area {
+    display: flex;
+
+}
+
+.legal-area .copyright {
+    font-size: 12px;
+    color: #6e6e73;
+    margin-top: 5px;
+    margin-right: 30px;
+}
+
+.legal-area .legal-links a {
+    font-size: 12px;
+    color: #424245;
+    border-right: 1px solid #d2d2d7;
+    margin-top: 5px;
+    margin-right: 7px;
+    padding-right: 10px;
+}
+.legal-area .legal-links a:last-child {
+    border-right: none;
+    padding-right: 0;
+}
+
+
+section.bottom-area p {
+    font-size: 12px;
+    color: #666;
+    margin-top: 10px;
+    margin-bottom: 20px;
+}
